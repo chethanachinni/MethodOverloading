@@ -1,0 +1,24 @@
+
+public class PalindromeOrNot 
+{
+  public static void main(String[] args) 
+  {
+	int num=142;
+	System.out.println(check(num));
+	
+  }
+  public static String check(int num)
+  {
+	  int rev=0;
+	  int rem=0;
+	  int temp=num;
+				
+		while(num>0)
+		{
+		  rem=num%10;
+		  rev=rev*10+rem;
+		  num=num/10;
+		}
+		return temp==rev?"palindrome":"Not palindrome";
+  }
+}
